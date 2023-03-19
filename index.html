@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PcComponentes | Portátiles</title>
+    <link rel="icon" href="/src/assets/images/apple-touch-icon.webp">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header>
+      <figure class="logo-container">
+        <a href="https://www.pccomponentes.com/" target="blank" rel="noopener noreferrer">
+        <img src="./src/assets/images/logo-pccomponentes.svg" alt="Logo PcComponentes" class="logo"/>
+        </a>
+        </figure>
+        <input type="text" placeholder="Busca por nombre" class="header-input-desktop" required minlength="2" maxlength="100">
+      </input>
+              
+        <nav class="shopping-navbar">
+          <a href="https://www.pccomponentes.com/compromisos"><img src="./src/assets/images/commintment-icon.png" alt="comminment-icon" class="nav-img"/></a>
+          <a href="https://www.pccomponentes.com/compromisos" class="nav-text">Compromisos</a>
+          <a href="https://www.pccomponentes.com/login"><img src="./src/assets/images/user-icon.png" alt="User Icon" class="nav-img"/></a>
+          <a href="https://www.pccomponentes.com/login" class="nav-text">Mi cuenta</a>
+          <a href="#"><img src="./src/assets/images/shopping-cart-icon.png" alt="Shopping Cart Icon" class="nav-img"/></a>
+          <a href="#" class="nav-text">Mi carrito</a>
+          </nav>
+        </header>
+        
+      <div id="app">
+        <input type="text" placeholder="Busca por nombre" class="header-input-mobile" required minlength="2" maxlength="100">
+        <section class="filters-section">
+          <form action="#" method="get"></form>
+          <fieldset class="filter-container">
+              <legend class="filters-title">Filtros</legend>
+              
+                <label for="seller">Vendedor</label>
+                <select class="seller-select">
+                <option value="">Vendedor</option>
+                </select>
+                
+                <p><label for="price">Precio máximo</label>
+                <input type="number" class="price-input" placeholder="Precio máximo"></p>
+                
+                <label for="stock">Disponibilidad</label>
+                <select class="stock-select">
+                <option value="">Disponibilidad</option>
+                <option value="true">Entrega mañana</option>
+                <option value="false">Entrega en 7 días</option>
+                </select>
+                
+                </fieldset>
+  <p><button type="reset" class="reset-button">Limpiar filtros</button></p>
+        </section>
+        <section class="products-section"></section>
+      </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
