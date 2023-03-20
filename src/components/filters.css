@@ -1,0 +1,83 @@
+fieldset {
+  border: none;
+}
+
+select {
+  cursor:pointer;
+}
+
+label {
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+button {
+  padding: 0.25rem 0.5rem;
+  background-color: rgb(255 255 255);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+}
+button:hover {
+  background-color: rgb(242 242 242);
+  cursor: pointer;
+}
+
+.filters-section {
+  min-width: 240px;
+}
+
+.filters-title {
+  font-weight: 800;
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.price-input::placeholder {
+  color: transparent;
+}
+
+.clean-button {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 376px) {
+  select {
+    font-size: 0.7rem;
+  }
+  label {
+    display: none;
+  }
+  .filters {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    font-size: small;
+  }
+  .filters-section {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding-bottom: 10px;
+  }
+  .filter-container {
+    border-bottom: none;
+    flex-direction: row;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+  }
+  .price-input {
+    max-width: 80px;
+    font-size: 0.7rem;
+  }
+  .price-input::placeholder {
+    color: var(--color-grey);
+  }
+}

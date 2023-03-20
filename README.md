@@ -1,17 +1,12 @@
-feedback comentar mejoras y que yo puse 3 filtros ne vez de 2 y añadí la búsqueda por nombre:
+Mejoras en base al feedback recibido:
 
-- En la zona de filtros has abusado de utilizar divs sin ninguna semántica.
-- La sección de filtros, es decir el HTML con los inputs es estática  no hace falta que la cargues desde JavaScript, puedes crearlo directamente con HTML.
-- Hay condiciones que no te están  sirviendo  de nada y están ensuciando el código a la hora de filtrar productos, podrías realizar un switch, eliminar condiciones las cuáles no están sirviendo para nada entre otras muchas maneras con las cuáles podrías refacorizar ese código.
-- Podrías insertar la búsqueda del producto en un formulario y los filtros sería mas correcto sintácticamente  y te permitiría al pulsar enter realizar la búsqueda  sin necesidad de pulsar el botón.
-- Podías a ver pedido los datos de manera asíncrona en vez de almacenarlo en un objeto dentro del mismo archivo, podrías almacenarlo en un json-server o extraerlo a un archivo externo e importarlo para limpiar tu código.
-puse 1 iltro más y search
+- Reducción del uso de divs sin semántica en la zona de filtros.
+- Sección de filtros creada con HTML y no cargada desde JavaScript por ser estática.
+- Eliminación de condiciones para el filtrado de productos, refacorizando el código. 
+- Búsquedas directas al introducir o seleccionar inputs, sin necesidad de clicar un botón después.
+- Almacenamiento de datos en json-server en vez de objeto dentro de main.js. Petición asíncrona.
 
+Otras mejoras: ordenación modular del código.
 
-el de seller no va segundas veces ni stock si están los otros 2. Me queda probar si 
-se puede usar todo el rato productList en vez de filtered
-separar los css por componentes
-borrar los console.log
-
-// const seller = sellerSelectElement.options[sellerSelectElement.selectedIndex].value;
-// const stock = stockSelectElement.options[stockSelectElement.selectedIndex].value;
+//Tiene que haber algo que ocupe de ancho 379. search-container ya no existe y se ha puesto sus props a search-input
+escalar elementos a pantalla mas pequeño y evitar que ocupen más de lo que mide la pantalla
