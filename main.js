@@ -1,12 +1,16 @@
 /* eslint-disable max-len */
-import {getProducts} from './src/components/card';
-import {getSellers} from './src/components/sellers';
-import {handleSearch, 
+/* eslint-disable linebreak-style */
+
+import { getProducts } from './src/components/card';
+import { getSellers } from './src/components/sellers';
+import {
+  handleSearch,
   handleSellerFilter,
-  debounce, 
-  handlePriceFilter, 
-  handleStockFilter, 
-  handleClean} from './src/components/filters'
+  debounce,
+  handlePriceFilter,
+  handleStockFilter,
+  handleClean,
+} from './src/components/filters';
 
 getProducts();
 getSellers();

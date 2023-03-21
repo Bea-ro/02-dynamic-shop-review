@@ -1,4 +1,19 @@
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable linebreak-style */
+
 const sellersList = [];
+
+const printSellers = () => {
+  sellersList.sort();
+  sellersList.forEach((item) => {
+    const uniqueSeller = item;
+    const optionElement = document.createElement('option');
+    const sellerSelectElement = document.querySelector('.seller-select');
+    sellerSelectElement.append(optionElement);
+    optionElement.value = uniqueSeller;
+    optionElement.innerText += uniqueSeller;
+  });
+};
 
 export const getSellers = () => {
   fetch('http://localhost:3000/products')
@@ -11,18 +26,4 @@ export const getSellers = () => {
       });
       printSellers();
     });
-};
-
-
-
-const printSellers = () => {
-  sellersList.sort();
-  sellersList.forEach((item) => {
-    const uniqueSeller = item;
-    const optionElement = document.createElement('option');
-    const sellerSelectElement = document.querySelector('.seller-select');
-    sellerSelectElement.append(optionElement);
-    optionElement.value = uniqueSeller;
-    optionElement.innerText += uniqueSeller;
-  });
 };

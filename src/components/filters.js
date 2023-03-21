@@ -1,4 +1,6 @@
-import { productsList, updateProductsList, getProducts, printProducts} from './card';
+/* eslint-disable linebreak-style */
+
+import { productsList, updateProductsList, getProducts, printProducts } from './card';
 import './filters.css';
 
 const searchByName = (keyword, productList) =>
@@ -29,7 +31,7 @@ export const handlePriceFilter = (ev) => {
 
 export const debounce = (func, delay) => {
   let timeoutId;
-  return function (...args) {
+  return function handleDelay(...args) {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
       func.apply(this, args);
