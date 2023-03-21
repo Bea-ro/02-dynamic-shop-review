@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable linebreak-style */
+import { products } from '../data/data';
 
 const sellersList = [];
 
@@ -16,14 +17,10 @@ const printSellers = () => {
 };
 
 export const getSellers = () => {
-  fetch('http://localhost:3000/products')
-    .then((res) => res.json())
-    .then((response) => {
-      response.forEach((product) => {
-        if (!sellersList.includes(product.seller)) {
-          sellersList.push(product.seller);
-        }
-      });
-      printSellers();
-    });
+  products.forEach((product) => {
+    if (!sellersList.includes(product.seller)) {
+      sellersList.push(product.seller);
+    }
+  });
+  printSellers();
 };

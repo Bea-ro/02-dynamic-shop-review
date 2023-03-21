@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/prefer-default-export */
+import { products } from '../data/data';
 import './card.css';
 
 const productsSection = document.querySelector('.products-section');
@@ -45,8 +46,7 @@ export const printProducts = (list) => {
   }
 };
 
-export const getProducts = async () => {
-  const res = await fetch('http://localhost:3000/products');
-  productsList = await res.json();
+export const getProducts = () => {
+  productsList = products;
   printProducts(productsList);
 };
