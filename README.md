@@ -7,7 +7,7 @@
 - HTML dinámico mediante **tag templates**
 - **Filtros**.
 - **Bucles** e iteración.
-- Maejo de **eventos**.
+- Manejo de **eventos**.
 - Diseño responsive mediante **media queries**.
 - Configuración y uso de **Eslint** y **Prettier**.
 - Despliegue con **Netlify**.
